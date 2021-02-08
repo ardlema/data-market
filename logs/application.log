@@ -1,0 +1,31 @@
+2021-02-08 11:03:39,993 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-5 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+
+2021-02-08 11:03:39,998 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-5 - Application started (Dev) (no global state)
+2021-02-08 11:03:40,131 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-4 - invokeBlock: 
+2021-02-08 11:03:40,132 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-4 - process: 
+2021-02-08 11:03:40,148 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-5 - create: data = PostData(999,Nuevo post,Otro post esta vez en castellano)
+2021-02-08 11:03:57,367 [DEBUG] from application.ErrorHandler in application-akka.actor.default-dispatcher-6 - onClientError: statusCode = 400, uri = /v1/posts/999/, message = Invalid Json: No content to map due to end-of-input
+ at [Source: (akka.util.ByteIterator$ByteArrayIterator$$anon$1); line: 1, column: 0]
+2021-02-08 11:05:55,934 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-7 - invokeBlock: 
+2021-02-08 11:05:55,934 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-7 - index: 
+2021-02-08 11:05:55,936 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-8 - list: 
+2021-02-08 11:06:03,737 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-9 - invokeBlock: 
+2021-02-08 11:06:03,739 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-9 - show: id = 999
+2021-02-08 11:06:03,742 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-10 - get: id = 999
+2021-02-08 11:06:07,699 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-9 - invokeBlock: 
+2021-02-08 11:06:07,699 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-9 - show: id = 1
+2021-02-08 11:06:07,700 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-11 - get: id = 1
+2021-02-08 11:06:10,942 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-9 - invokeBlock: 
+2021-02-08 11:06:10,942 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-9 - show: id = 5
+2021-02-08 11:06:10,944 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-12 - get: id = 5
+2021-02-08 11:11:09,756 [TRACE] from v1.post.PostActionBuilder in application-akka.actor.default-dispatcher-13 - invokeBlock: 
+2021-02-08 11:11:09,757 [TRACE] from v1.post.PostController in application-akka.actor.default-dispatcher-13 - index: 
+2021-02-08 11:11:09,757 [TRACE] from v1.post.PostRepositoryImpl in application-repository.dispatcher-14 - list: 
+2021-02-08 11:18:56,174 [INFO] from play.api.internal.libs.concurrent.CoordinatedShutdownSupport in pool-10-thread-7 - Starting synchronous coordinated shutdown with ServerStoppedReason reason and 35000 milliseconds timeout
+2021-02-08 11:18:56,176 [INFO] from play.core.server.AkkaHttpServer in pool-10-thread-7 - Stopping Akka HTTP server...
+2021-02-08 11:18:56,182 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-32 - Terminating server binding for /0:0:0:0:0:0:0:0:9000
+2021-02-08 11:18:56,218 [INFO] from play.core.server.AkkaHttpServer in play-dev-mode-akka.actor.internal-dispatcher-32 - Running provided shutdown stop hooks
